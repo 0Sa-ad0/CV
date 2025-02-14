@@ -3,11 +3,8 @@ name: Build LaTeX CV
 on:
   push:
     branches:
-      - main # Runs on every push to main
-  pull_request: # Runs on pull requests (optional)
-  workflow_dispatch: # Allows manual triggering
-  schedule:
-    - cron: "*/1 * * * *" # Runs every 1 minutes
+      - main
+  workflow_dispatch:  # Allows manual trigger
 
 jobs:
   build:
@@ -15,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4  # Updated to v4
 
       - name: Compile LaTeX to PDF
         uses: xu-cheng/latex-action@v3
@@ -31,9 +28,8 @@ jobs:
           git push
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v4  # Updated to v4
         with:
-          personal_token: ${{ secrets.GH_PAT }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: .
-          commit_message: "Deploy CV to GitHub Pages"
+          publish_dir: .  # Push entire repo to `gh-pages`
