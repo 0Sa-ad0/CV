@@ -1,0 +1,151 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{tcolorbox}
+\usepackage{pgfplots}
+\usepackage{xcolor}
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+
+\pagestyle{empty}
+
+\newcommand{\progressbar}[2]{%
+    \begin{tcolorbox}[width=\linewidth, colback=gray!0, colframe=white, arc=3mm, boxrule=0pt, left=2pt, right=2pt, top=2pt, bottom=2pt]
+        \textbf{#1} \\
+        \begin{tikzpicture}
+            \draw[fill=black!70] (0,0) rectangle (#2,0.3);
+            \draw[draw=black] (0,0) rectangle (5,0.3);
+        \end{tikzpicture}
+    \end{tcolorbox}
+}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\huge TOUHIDUL ISLAM SAAD}\\
+    \textsc{Data Analyst | Full-Stack Developer | Computer Vision Researcher} \\
+    \href{mailto:pro.saaad@gmail.com}{pro.saaad@gmail.com} | 
+    \href{https://linkedin.com/in/saadsaadsaad/}{{LinkedIn}} |
+    +8801828327033 | 
+    \href{https://wa.me/+8801828327033}{WhatsApp} | Dhaka, Bangladesh 
+\end{center}
+
+\noindent
+\rule{\linewidth}{0.5mm}
+
+\section*{ABOUT ME}
+To leverage my expertise in data analysis, deep learning, and full-stack development using Node.js (NextJS, NestJS, Express.js) for 3 years, along with proficiency in Tailwind UI, ReactJS, PostgreSQL, MongoDB, and image segmentation research.
+
+\section*{CERTIFICATION}
+\textbf{IEEE Student Professional Awareness Venture (SPAVe) 6.0} | March 16th, 2023 \\
+Participant \\
+Certified by IEEE AIUB Student Branch
+
+\section*{EDUCATION}
+\textbf{Bachelor of Science in Computer Science Engineering} \\
+American International University-Bangladesh (\href{https://www.aiub.edu/}{\textit{AIUB}}) \\
+January 2022 - January 2025
+
+\section*{LANGUAGES}
+\progressbar{Bangla}{5} 
+\progressbar{English}{4} 
+\progressbar{Française \href{https://www.afdhaka.org/}{[\textit{Alliance Française de Dhaka}]}}{3} 
+
+
+\section*{WORK EXPERIENCE}
+
+\textbf{Hands-on practice} 
+\vspace{0.3cm}
+
+\begin{itemize}
+
+    \item \texttt{MERN Backend} \hfill \texttt{7-8 January 2025}  
+    \begin{itemize}
+        \item Built with Express JS, TypeScript, and MongoDB.
+        \item Implemented functionality to add a product with attributes: Name, Description, Price, Discount, Image URL, Availability, Unique product code.
+        \item Auto-generated a unique code based on the product name by: Extracting the longest strictly increasing substring, Applying specific formatting.
+        \item Ensured each product is linked to a valid category with validation for consistency.
+        \item Enabled product updates, including: Status, Description, Discount and implemented filtering by: Category, Name, Pricing calculation with discount details.
+    \end{itemize}
+    
+    \hfill \href{https://github.com/0Sa-ad0/backend-challenge}{\textit{Github Link}}  
+    \vspace{0.3cm}
+
+    \item \texttt{Data Analysis} \hfill \texttt{August - September 2024}  
+    \begin{itemize}[label=--]  % Double dash for better visibility
+        \item Analyzed the dataset with 768 entries.
+        \item Handled missing values by filling them with zeros.
+        \item Applied Naive Bayes algorithm for classification, predicting whether a patient has diabetes based on medical metrics.
+        \item Achieved an accuracy of 78 percent, with a confusion matrix showing true positives, true negatives, false positives, and false negatives.
+    \end{itemize} 
+
+    \hfill \href{https://github.com/0Sa-ad0/Data-mining}{\textit{Github Link}}  
+    \vspace{0.3cm}
+
+    \item \texttt{NextJS} \hfill \texttt{April - May 2024}  
+    \begin{itemize}[label=--]
+        \item AXIOS for making HTTP requests (API calls in NestJS).
+        \item React core principles including Props, States, and Hooks.
+        \item Next.js features such as routing, rendering, and libraries.
+        \item Custom form validation using Vanilla JavaScript (without relying on HTML validation).
+        \item Tailwind UI for styling.
+        \item Authentication implementation.
+    \end{itemize}
+
+    \hfill \href{https://github.com/0Sa-ad0/advanced-web-tech/tree/main/NextJS}{\textit{Github Link}} 
+    \vspace{0.3cm}
+
+    \item \texttt{NestJS} \hfill \texttt{February - March 2024}  
+    \begin{itemize}[label=--]
+        \item 15 APIs with comprehensive Controller and Service layers.
+        \item Pipes for data transformation and validation.
+        \item File upload functionality.
+        \item Database relationships, including One-to-One and One-to-Many associations and query optimization.
+        \item JWT, OAuth authentication alongside Bcrypt for password hashing and session management.
+        \item Email functionality using the Mailer module with SMTP integration.
+    \end{itemize} 
+
+    \hfill \href{https://github.com/0Sa-ad0/advanced-web-tech/tree/main/NestJS}{\textit{Github Link}}  
+    \vspace{0.3cm}
+
+    \item \texttt{Web technologies} \hfill \texttt{October - December 2023}  
+    \begin{itemize}[label=--]
+        \item Developed using HTML, PHP, CSS, JavaScript, and Ajax, managed via XAMPP.
+        
+        \item Admin Features: Manage drivers, admins, earnings, locations, riders, and user route bookings.
+    
+        \item Customer Support Manager Features: Dashboard with trip summaries, history, driver earnings, reported issues, trip ratings, and feedback.
+    
+        \item Driver Features: Dashboard for profile management, license verification, support, responses, and ride requests.
+    
+        \item Rider Features: Ride tracking, trip history, cancellation, multiple payment options, emergency services, and ride scheduling.
+        
+    \end{itemize}
+
+    \hfill \href{https://github.com/0Sa-ad0/web-tech}{\textit{Github Link}}
+
+\end{itemize}
+
+\section*{CORE SKILLS}
+\begin{itemize}[label=-]
+    \item Primary Programming Languages: Python, Javascript
+    \item Other Programming Languages: C++ (OpenGL), Java, C\#, R, HTML5, CSS3, PHP, Tailwind CSS, ReactJS
+    \item Advanced Database Management: PostgreSQL, MongoDB, MySQL
+    \item Visual Development Tools: Figma, Droip
+    \item API development and integration (Postman API, RESTful API), Version Control (Git), Docker, Agile
+    \item Socket.IO, Redux, Bootstrap
+    \item SOAP notes, Keyboard shortcuts, Web browsing, Operating remote desktop applications
+    \item Typing speed: 33 WPM/156 CPM, accuracy 100\%
+    \item SQL Server (T-SQL, complex queries, stored procedures), Data migration and integration, Data analysis and optimization
+\end{itemize}
+
+\section*{SOFT SKILLS}
+\begin{itemize}[label=-]
+    \item Communication, Adaptability, Leadership, Creativity, Time Management
+    \item Attention to Detail, Cognitive Functionality, Proactive Mindset, Dynamic Thinking, Critical Issue Rationalization
+    \item Client-facing consulting skills, Team collaboration (Enterprise, Development, Technical Support, Product Teams), Innovation and adaptability, Documentation and technical writing
+\end{itemize}
+
+\end{document}
